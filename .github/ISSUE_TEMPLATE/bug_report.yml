@@ -1,0 +1,95 @@
+name: Bug Report
+description: Report a bug or issue found in a live or production application
+title: '[Module/Feature]: Brief description of the bug'
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide a detailed bug report using the fields below.
+
+  - type: dropdown
+    id: app_name
+    attributes:
+      label: Application Name
+      description: What app did you find this bug in?
+      options:
+        - Finch
+        - BitePal
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment & Device Details
+      placeholder: 'e.g. iOS 17.5 / iPhone 13 / App Version 2.4.1'
+    validations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Preconditions
+      placeholder: 'e.g. User is logged in and has items in cart.'
+      value: 'N/A'
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. Observe the issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: Expected Result
+      placeholder: 'Describe what should happen according to specs or business logic.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: Actual Result
+      placeholder: 'Describe what actually happened (the erroneous behavior).'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Technical impact on the system
+      options:
+        - Critical / Blocker
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Urgency of business fix
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: visual_evidence
+    attributes:
+      label: Visual Evidence / Attachments
+      placeholder: 'Drag and drop screenshots, screen recordings, or console logs here.'
