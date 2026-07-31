@@ -1,4 +1,4 @@
-##🐞 Wild Bugs Log
+## 🐞 Wild Bugs Log
 
 | App | Module / Area | Bug Summary | Severity | Report |
 | :--- | :--- | :--- | :--- | :--- |
